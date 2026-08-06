@@ -15,7 +15,7 @@ fn main() {
     let shmem_path = std::env::args()
         .nth(1)
         .map(PathBuf::from)
-        .unwrap_or_else(|| PathBuf::from("/tmp/karythra-gpu-shmem"));
+        .unwrap_or_else(|| PathBuf::from("/tmp/fresco-shmem"));
 
     println!("test_scene: opening {:?}", shmem_path);
     println!("start the gpu server first: cargo run -- {:?}", shmem_path);

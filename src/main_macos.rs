@@ -970,7 +970,7 @@ pub fn run() {
 
     let shmem_path = args.get(1)
         .map(PathBuf::from)
-        .unwrap_or_else(|| PathBuf::from("/tmp/karythra-gpu-shmem"));
+        .unwrap_or_else(|| PathBuf::from("/tmp/fresco-shmem"));
 
     let shmem_size: usize = 32 * 1024 * 1024;
 
